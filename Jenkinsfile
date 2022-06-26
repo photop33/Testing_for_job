@@ -12,7 +12,7 @@ pipeline {
                     properties([pipelineTriggers([pollSCM('*/30 * * * *')])])
                     properties([buildDiscarder(logRotator(daysToKeepStr: '5', numToKeepStr: '20')),])
                 }
-                git 'https://github.com/photop33/Test_microfocus.git'
+                git https://github.com/photop33/Testing_for_job.git'
             }
         }
                   stage('Flask.py') {
